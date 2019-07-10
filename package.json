@@ -2,7 +2,8 @@
   "name": "gitbook-plugin-multiterm",
   "description": "Change multiline code blocks to look more like a term",
   "main": "index.js",
-  "version": "1.0.1",
+  "homepage": "https://github.com/asemushenko/gitbook-plugin-multiterm",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/asemushenko/gitbook-plugin-multiterm.git"

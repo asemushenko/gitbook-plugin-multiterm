@@ -42,7 +42,7 @@ function processLine(line, config) {
 
     re = XRegExp(config.prompt);
 
-    if(re.test(line)) {
+    //if(re.test(line)) {
         var parts = XRegExp.exec(line, re);
         str += `<span class="t-line t-prompt-line">`
         for(var i=0; i<re.xregexp.captureNames.length; i++) {
@@ -59,18 +59,18 @@ function processLine(line, config) {
             }
             commands += parts.command.replace(/"/g,'&quot;') + '\n';
         }
-    } else {
-        if(config.lineStyles && line.startsWith("[warning]")) {
-            str += '<span class="t-line t-warning">';
-            str += line.replace("[warning]","") + '\n';
-        } else if (config.lineStyles && line.startsWith("[error]")) {
-            str += '<span class="t-line t-error">';
-            str += line.replace("[error]","") + '\n';ч
-        } else {
-            str += '<span class="t-line">';
-            str += line + '\n';
-        }
-    }
+//    } else {
+//        if(config.lineStyles && line.startsWith("[warning]")) {
+//            str += '<span class="t-line t-warning">';
+//            str += line.replace("[warning]","") + '\n';
+//        } else if (config.lineStyles && line.startsWith("[error]")) {
+//            str += '<span class="t-line t-error">';
+//            str += line.replace("[error]","") + '\n';
+//        } else {
+//            str += '<span class="t-line">';
+//            str += line + '\n';
+//        }
+//    }
     str += '</span>';
 
 
